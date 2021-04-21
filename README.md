@@ -1,12 +1,14 @@
-# reapme - playing with Linux processes termination in Rust
+# Learning Linux processes termination in Rust (Cloned/forked Initially from Ivan Vanichuk's [Repo](https://github.com/iximiuz/reapme)
 
 The project covers the following scenarios:
 
 - awaiting a child process termination;
 - awaiting a grandchild process termination;
 - catching the parent process termination.
+- using pipes to communicate between 2 different childs
+- using prctl() to make parent or grandparent sub-reaper of (grand)child, if first child process (Parent of grand parent) dies.
 
-Read more about it in my <a href="https://iximiuz.com/en/posts/dealing-with-processes-termination-in-Linux/">blog</a>.
+Read more about it in Ivan Vanichuk's <a href="https://iximiuz.com/en/posts/dealing-with-processes-termination-in-Linux/">blog</a>.
 
 ## Usage
 ```bash
@@ -27,4 +29,3 @@ cargo run --bin subreaper
 # put all things together
 cargo run --bin combined
 ```
-
