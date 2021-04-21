@@ -1,4 +1,5 @@
-# Learning Linux processes termination in Rust (Cloned/forked Initially from Ivan Vanichuk's [Repo](https://github.com/iximiuz/reapme)
+# Learning Linux processes termination in Rust 
+ - Cloned/forked Initially from Ivan Vanichuk's [Repo](https://github.com/iximiuz/reapme)
 
 The project covers the following scenarios:
 
