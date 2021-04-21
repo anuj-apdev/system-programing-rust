@@ -1,0 +1,49 @@
+[package]
+name = "reapme"
+version = "0.1.0"
+authors = ["Ivan Velichko <iximiuz@gmail.com>"]
+edition = "2018"
+#default-run = "reapme"
+
+[dependencies]
+libc = "0.2"
+nix = "0.15.0"
+chrono = "0.4"
+log = "0.4"
+mio = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+structopt = "0.3"
+syslog = "5.0.0"
+
+[[bin]]
+name = "pipe1"
+path = "src/pipe1.rs"
+
+#[[bin]]
+#name = "signalfd"
+#path = "src/signalfd.rs"
+
+[[bin]]
+name = "wait_block"
+path = "src/wait_block.rs"
+
+[[bin]]
+name = "wait_busy"
+path = "src/wait_busy.rs"
+
+[[bin]]
+name = "wait_signal"
+path = "src/wait_signal.rs"
+
+[[bin]]
+name = "subreaper"
+path = "src/subreaper.rs"
+
+[[bin]]
+name = "combined"
+path = "src/combined.rs"
+
+[[bin]]
+name = "sleepy"
+path = "src/sleepy.rs"
