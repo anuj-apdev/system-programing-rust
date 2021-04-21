@@ -1,5 +1,5 @@
 # Learning Linux processes termination in Rust 
- - Cloned/forked Initially from Ivan Vanichuk's [Repo](https://github.com/iximiuz/reapme)
+ - Cloned/forked Initially from Ivan Velichko's [Repo](https://github.com/iximiuz/reapme)
 
 The project covers the following scenarios:
 
@@ -9,7 +9,7 @@ The project covers the following scenarios:
 - using pipes to communicate between 2 different childs
 - using prctl() to make parent or grandparent sub-reaper of (grand)child, if first child process (Parent of grand parent) dies.
 
-Read more about it in Ivan Vanichuk's <a href="https://iximiuz.com/en/posts/dealing-with-processes-termination-in-Linux/">blog</a>.
+Read more about it in Ivan Velichko's <a href="https://iximiuz.com/en/posts/dealing-with-processes-termination-in-Linux/">blog</a>.
 
 ## Usage
 ```bash
